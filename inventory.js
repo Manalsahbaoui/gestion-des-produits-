@@ -19,9 +19,17 @@ class Inventory {
         produits.push(produit)
         produits = JSON.stringify(produits)
         fs.writeFileSync("data.json",produits,null,4)
-        
     }
-
-
+    static afficherProduit() {
+        if(fs.existsSync("data.json")){
+            produits = JSON.parse(fs.readFileSync("data.json","utf-8"));
+            for(let i = 0;i<produits.length;i++){
+                produit.nom
+            }
+        }else{
+            console.log("Aucun produit à afficher");
+        }    
+    }
+    
 }
 module.exports = Inventory;

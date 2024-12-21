@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-console.log("welcome in our product management");
+console.log("c");
 panneauDeControle();
 
 function panneauDeControle() {
@@ -25,10 +25,12 @@ function panneauDeControle() {
         break;
       case "2":
         console.log("Disponibilité  des produits :");
+        Inventory.afficherProduit();
         panneauDeControle();
         break;
       case "3":
         console.log("Modification sur les infos des produits :");
+       
         panneauDeControle();
         break;
       case "4":
